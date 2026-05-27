@@ -1,0 +1,86 @@
+==================================================
+🚗 PROJETO FINAL — LOJA DE VEÍCULOS
+==================================================
+
+
+==================================================
+🧠 FLUXO MENTAL DA VENDA
+==================================================
+
+A venda é o centro do sistema.
+Ela registra todas as informações principais da negociação.
+
+
+A venda precisa saber:
+
+[👨‍💼] Quem vendeu
+[🧍] Quem comprou
+[🚘] Qual veículo foi vendido
+[📅] Quando aconteceu
+[💳] Como foi pago
+
+
+==================================================
+👨‍💼 FLUXO MENTAL DO FUNCIONÁRIO
+==================================================
+
+Pense assim:
+
+O funcionário representa a pessoa que realiza a venda.
+
+
+Responsabilidades do funcionário:
+
+- 🚘 Vender veículos
+- 🤝 Participar da venda
+- 📜 Aparecer no histórico do sistema
+
+
+==================================================
+🧍 FLUXO MENTAL DO CLIENTE
+==================================================
+
+Pense assim:
+
+O cliente representa quem compra o veículo.
+
+
+O cliente participa:
+
+- 🛒 Da venda
+- 🚘 Do relacionamento com o veículo
+- 📜 Do histórico do sistema
+
+
+==================================================
+🔗 RELAÇÃO MENTAL DO SISTEMA
+==================================================
+
+Funcionário ---------> Venda <--------- Cliente
+                            |
+                            |
+                            v
+                         Veículo
+
+
+==================================================
+📌 ENTIDADES PRINCIPAIS DO SISTEMA
+==================================================
+
+[👨‍💼] Funcionário
+[🧍] Cliente
+[🚘] Veículo
+[💰] Venda
+
+
+==================================================
+🎯 REGRA PRINCIPAL DO SISTEMA
+==================================================
+
+Toda venda conecta:
+
+- um funcionário
+- um cliente
+- um veículo
+
+e registra todas as informações da negociação.

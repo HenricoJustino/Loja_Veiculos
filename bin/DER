@@ -1,0 +1,137 @@
+DER — Sistema de Loja de Veículos
+
+========================================
+OBJETIVO DO PROJETO
+========================================
+
+Sistema simples para gerenciamento de uma loja de veículos.
+
+O sistema permitirá:
+
+- cadastro de funcionários
+- cadastro de clientes
+- cadastro de veículos
+- registro de vendas
+- relacionamento entre cliente, funcionário e veículo
+
+
+========================================
+REGRAS DE NEGÓCIO
+========================================
+
+FUNCIONÁRIO
+- Um funcionário pode realizar várias vendas.
+
+CLIENTE
+- Um cliente pode realizar várias compras.
+
+VEÍCULO
+- Um veículo pertence a uma venda.
+- O veículo possui um status:
+  * DISPONIVEL
+  * VENDIDO
+
+VENDA
+A venda conecta:
+- cliente
+- funcionário
+- veículo
+
+
+========================================
+DER (DIAGRAMA ENTIDADE RELACIONAMENTO)
+========================================
+
+FUNCIONARIO ||--o{ VENDA : realiza
+CLIENTE     ||--o{ VENDA : compra
+VEICULO     ||--|| VENDA : pertence
+
+
+FUNCIONARIO
+-------------
+id          : int PK
+nome        : string
+cpf         : string
+telefone    : string
+email       : string
+
+
+CLIENTE
+-------------
+id          : int PK
+nome        : string
+cpf         : string
+telefone    : string
+email       : string
+
+
+VEICULO
+-------------
+id          : int PK
+marca       : string
+modelo      : string
+cor         : string
+ano         : int
+preco       : decimal
+status      : string
+
+
+VENDA
+-------------
+id                  : int PK
+dataVenda           : date
+formaPagamento      : string
+valorFinal          : decimal
+
+id_cliente          : int FK
+id_funcionario      : int FK
+id_veiculo          : int FK
+
+
+========================================
+EXPLICAÇÃO VISUAL DO FLUXO
+========================================
+
+Funcionário realiza uma venda
+        ↓
+Cliente compra um veículo
+        ↓
+Venda registra:
+- quem vendeu
+- quem comprou
+- qual veículo foi vendido
+
+
+========================================
+ESTRUTURA MENTAL DO PROJETO
+========================================
+
+FUNCIONÁRIO
+Representa o vendedor da loja.
+
+CLIENTE
+Representa quem está comprando o veículo.
+
+VEÍCULO
+Representa o produto da loja.
+
+VENDA
+Representa a transação principal do sistema.
+
+
+========================================
+OBSERVAÇÃO IMPORTANTE
+========================================
+
+O sistema foi propositalmente simplificado para:
+
+- facilitar desenvolvimento
+- melhorar organização
+- permitir entrega funcional em curto prazo
+- manter um projeto apresentável academicamente
+
+Mesmo simplificado, o sistema continua:
+
+- relacional
+- organizado
+- próximo de um cenário real
