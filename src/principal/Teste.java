@@ -13,7 +13,7 @@ import modelo.Venda;
  * Utilizada para testes iniciais
  * das entidades e relacionamentos.
  */
-public class Main {
+public class Teste {
 
     public static void main(String[] args) {
 
