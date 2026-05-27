@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f8a9216-3848-46eb-ad1e-f900d57d9222" name="Changes" comment="" />
+    <list default="true" id="8f8a9216-3848-46eb-ad1e-f900d57d9222" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/conexao/Conexao.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/conexao/Conexao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/dao/ClienteDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/dao/ClienteDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/dao/FuncionarioDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/dao/FuncionarioDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/dao/VeiculoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/dao/VeiculoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/dao/VendaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/dao/VendaDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/modelo/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/modelo/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/modelo/Funcionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/modelo/Funcionario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/modelo/Veiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/modelo/Veiculo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/modelo/Venda.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/modelo/Venda.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/principal/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/principal/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/servico/ClienteServico.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/servico/ClienteServico.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/servico/FuncionarioServico.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/servico/FuncionarioServico.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/servico/VeiculoServico.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/servico/VeiculoServico.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tela/principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tela/principal.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,13 +70,18 @@
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rafae\OneDrive\Documentos\GitHub\Loja_Veiculos\src" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="principal.Main" />
-      <module name="Loja_Veiculos" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="principal.*" />
@@ -68,6 +91,17 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Loja_Veiculos" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Loja_Veiculos" />
+      <option name="filePath" />
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
