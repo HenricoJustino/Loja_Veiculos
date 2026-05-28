@@ -14,13 +14,13 @@ public class principal {
         Label titulo = new Label("Sistema Loja de Veículos");
 
         Button botao = new Button("Clique aqui");
-
+	
         botao.setOnAction(e -> {
             System.out.println("Botão clicado!");
         });
 
         VBox layout = new VBox(20);
-
+        
         layout.getChildren().addAll(titulo, botao);
 
         layout.setAlignment(Pos.CENTER);

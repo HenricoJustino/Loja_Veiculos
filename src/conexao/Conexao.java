@@ -1,38 +1,49 @@
 package conexao;
 
-/* Classe apenas pre- definida temos que corrir as alterações conforme o banco de dados*/
 import java.sql.Connection;
 import java.sql.DriverManager;
 
 /**
- * Classe responsável por criar conexão com o banco de dados.
+ * Classe responsável pela conexão
+ * com o banco de dados MySQL.
  */
 public class Conexao {
 
-	// URL do banco de dados
-	private static final String URL = "jdbc:mysql://localhost:3306/loja_veiculos";
+    // URL do banco
+    private static final String URL =
+            "jdbc:mysql://localhost:3306/loja_veiculos";
 
-	// Usuário do MySQL
-	private static final String USUARIO = "root";
+    // Usuário do banco
+    private static final String USUARIO =
+            "root";
 
-	// Senha do MySQL
-	private static final String SENHA = "";
+    // Senha do banco
+    private static final String SENHA =
+            "";
 
-	/**
-	 * Método responsável por abrir conexão com o banco.
-	 */
-	public static Connection conectar() {
+    /**
+     * Método responsável por abrir
+     * conexão com o banco.
+     */
+    public static Connection conectar() {
 
-		try {
+        try {
 
-			return DriverManager.getConnection(URL, USUARIO, SENHA);
+            // Retorna conexão aberta
+            return DriverManager.getConnection(
+                    URL,
+                    USUARIO,
+                    SENHA
+            );
 
-		} catch (Exception e) {
+        } catch (Exception e) {
 
-			System.out.println("Erro ao conectar com banco.");
-			e.printStackTrace();
+            System.out.println(
+                    "Erro ao conectar com banco.");
 
-			return null;
-		}
-	}
+            e.printStackTrace();
+
+            return null;
+        }
+    }
 }
