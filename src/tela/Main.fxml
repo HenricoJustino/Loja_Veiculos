@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            style="-fx-background-color: #0f172a;">
+
+    <!-- SIDEBAR -->
+    <left>
+        <VBox prefWidth="240"
+              spacing="12"
+              style="-fx-background-color: #111827;
+                     -fx-padding: 25;">
+
+            <!-- LOGO -->
+            <VBox spacing="4">
+                <Label text="AUTOPRIME"
+                       style="-fx-text-fill: white;
+                              -fx-font-size: 26px;
+                              -fx-font-weight: bold;"/>
+
+                <Label text="Sistema de Gestão"
+                       style="-fx-text-fill: #94a3b8;
+                              -fx-font-size: 13px;"/>
+            </VBox>
+
+            <Separator style="-fx-background-color: #334155;"/>
+
+            <!-- MENU -->
+            <VBox spacing="10" VBox.vgrow="ALWAYS">
+
+                <Button text="🏠 Dashboard"
+                        maxWidth="Infinity"
+                        style="-fx-background-color: #2563eb;
+                               -fx-text-fill: white;
+                               -fx-font-size: 14px;
+                               -fx-background-radius: 10;
+                               -fx-padding: 12;
+                               -fx-cursor: hand;"/>
+
+                <Button text="🚗 Veículos"
+                        maxWidth="Infinity"
+                        style="-fx-background-color: #1e293b;
+                               -fx-text-fill: white;
+                               -fx-font-size: 14px;
+                               -fx-background-radius: 10;
+                               -fx-padding: 12;
+                               -fx-cursor: hand;"/>
+
+                <Button text="👤 Clientes"
+                        maxWidth="Infinity"
+                        style="-fx-background-color: #1e293b;
+                               -fx-text-fill: white;
+                               -fx-font-size: 14px;
+                               -fx-background-radius: 10;
+                               -fx-padding: 12;
+                               -fx-cursor: hand;"/>
+
+                <Button text="💼 Funcionários"
+                        maxWidth="Infinity"
+                        style="-fx-background-color: #1e293b;
+                               -fx-text-fill: white;
+                               -fx-font-size: 14px;
+                               -fx-background-radius: 10;
+                               -fx-padding: 12;
+                               -fx-cursor: hand;"/>
+
+                <Button text="💰 Vendas"
+                        maxWidth="Infinity"
+                        style="-fx-background-color: #1e293b;
+                               -fx-text-fill: white;
+                               -fx-font-size: 14px;
+                               -fx-background-radius: 10;
+                               -fx-padding: 12;
+                               -fx-cursor: hand;"/>
+            </VBox>
+
+            <!-- USER -->
+            <VBox spacing="3"
+                  style="-fx-background-color: #1e293b;
+                         -fx-background-radius: 12;
+                         -fx-padding: 15;">
+
+                <Label text="Administrador"
+                       style="-fx-text-fill: white;
+                              -fx-font-size: 15px;
+                              -fx-font-weight: bold;"/>
+
+                <Label text="admin@autoprime.com"
+                       style="-fx-text-fill: #94a3b8;
+                              -fx-font-size: 12px;"/>
+            </VBox>
+        </VBox>
+    </left>
+
+    <!-- CONTEÚDO -->
+    <center>
+        <VBox spacing="20"
+              style="-fx-padding: 30;">
+
+            <!-- TOPO -->
+            <HBox alignment="CENTER_LEFT">
+                <VBox spacing="4">
+                    <Label text="Dashboard"
+                           style="-fx-text-fill: white;
+                                  -fx-font-size: 30px;
+                                  -fx-font-weight: bold;"/>
+
+                    <Label text="Painel principal do sistema"
+                           style="-fx-text-fill: #94a3b8;
+                                  -fx-font-size: 14px;"/>
+                </VBox>
+            </HBox>
+
+            <!-- CARDS -->
+            <HBox spacing="20">
+
+                <VBox prefWidth="220"
+                      spacing="10"
+                      style="-fx-background-color: #1e293b;
+                             -fx-background-radius: 16;
+                             -fx-padding: 20;">
+
+                    <Label text="🚗"
+                           style="-fx-font-size: 32px;"/>
+
+                    <Label text="Veículos"
+                           style="-fx-text-fill: white;
+                                  -fx-font-size: 18px;
+                                  -fx-font-weight: bold;"/>
+
+                    <Label text="128 cadastrados"
+                           style="-fx-text-fill: #94a3b8;"/>
+                </VBox>
+
+                <VBox prefWidth="220"
+                      spacing="10"
+                      style="-fx-background-color: #1e293b;
+                             -fx-background-radius: 16;
+                             -fx-padding: 20;">
+
+                    <Label text="👤"
+                           style="-fx-font-size: 32px;"/>
+
+                    <Label text="Clientes"
+                           style="-fx-text-fill: white;
+                                  -fx-font-size: 18px;
+                                  -fx-font-weight: bold;"/>
+
+                    <Label text="54 registrados"
+                           style="-fx-text-fill: #94a3b8;"/>
+                </VBox>
+
+                <VBox prefWidth="220"
+                      spacing="10"
+                      style="-fx-background-color: #1e293b;
+                             -fx-background-radius: 16;
+                             -fx-padding: 20;">
+
+                    <Label text="💰"
+                           style="-fx-font-size: 32px;"/>
+
+                    <Label text="Vendas"
+                           style="-fx-text-fill: white;
+                                  -fx-font-size: 18px;
+                                  -fx-font-weight: bold;"/>
+
+                    <Label text="R$ 320.000"
+                           style="-fx-text-fill: #94a3b8;"/>
+                </VBox>
+
+            </HBox>
+
+            <!-- TABELA -->
+            <VBox spacing="15"
+                  style="-fx-background-color: #1e293b;
+                         -fx-background-radius: 16;
+                         -fx-padding: 20;">
+
+                <Label text="Últimos Veículos"
+                       style="-fx-text-fill: white;
+                              -fx-font-size: 20px;
+                              -fx-font-weight: bold;"/>
+
+                <TableView prefHeight="300">
+
+                    <columns>
+
+                        <TableColumn text="Modelo" prefWidth="220"/>
+                        <TableColumn text="Marca" prefWidth="180"/>
+                        <TableColumn text="Ano" prefWidth="100"/>
+                        <TableColumn text="Preço" prefWidth="180"/>
+
+                    </columns>
+
+                </TableView>
+
+            </VBox>
+
+        </VBox>
+    </center>
+
+</BorderPane>
